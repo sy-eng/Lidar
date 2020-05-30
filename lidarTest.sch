@@ -1,0 +1,322 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:RASPBERRY_PI_4B_+_Samtec_ESP-120-33-G-D J2
+U 1 1 5ED2177E
+P 4200 3250
+F 0 "J2" H 4850 3515 50  0000 C CNN
+F 1 "RASPBERRY_PI_4B_+_Samtec_ESP-120-33-G-D" H 4850 3424 50  0000 C CNN
+F 2 "RASPBERRYPI4B4GB" H 5350 3350 50  0001 L CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_4b_4p0.pdf" H 5350 3250 50  0001 L CNN
+F 4 "RASPBERRY PI 4 MODEL B with Samtec ESP-120-33-G-D connector drawn from underneath for use as a plug in module." H 5350 3150 50  0001 L CNN "Description"
+F 5 "24.3" H 5350 3050 50  0001 L CNN "Height"
+F 6 "RASPBERRY-PI" H 5350 2950 50  0001 L CNN "Manufacturer_Name"
+F 7 "RASPBERRY PI 4B + Samtec ESP-120-33-G-D" H 5350 2850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "RASPBERRY PI 4B + Samtec ESP-120-33-G-D" H 5350 2750 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5350 2650 50  0001 L CNN "Arrow Price/Stock"
+F 10 "" H 5350 2550 50  0001 L CNN "Mouser Part Number"
+F 11 "" H 5350 2450 50  0001 L CNN "Mouser Price/Stock"
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:2SK4017_Q_ Q1
+U 1 1 5ED23D55
+P 7300 4650
+F 0 "Q1" V 7738 4322 50  0000 R CNN
+F 1 "2SK4017_Q_" V 7647 4322 50  0000 R CNN
+F 2 "TO230P250X650X900-3P" H 8150 4750 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/us/product/mosfet/detail.2SK4017.html" H 8150 4650 50  0001 L CNN
+F 4 "MOSFET,Nch,60V/5A/0.1ohm,New Pw-Mold2" H 8150 4550 50  0001 L CNN "Description"
+F 5 "2.5" H 8150 4450 50  0001 L CNN "Height"
+F 6 "Toshiba" H 8150 4350 50  0001 L CNN "Manufacturer_Name"
+F 7 "2SK4017(Q)" H 8150 4250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "2SK4017(Q)" H 8150 4150 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/2sk4017-q/toshiba" H 8150 4050 50  0001 L CNN "Arrow Price/Stock"
+F 10 "N/A" H 8150 3950 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Toshiba/2SK4017Q?qs=7H2Jq%252ByxpJI4GULh%2FX6GDQ%3D%3D" H 8150 3850 50  0001 L CNN "Mouser Price/Stock"
+	1    7300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5ED26108
+P 1200 3200
+F 0 "J1" H 1257 3517 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1257 3426 50  0000 C CNN
+F 2 "" H 1250 3160 50  0001 C CNN
+F 3 "~" H 1250 3160 50  0001 C CNN
+	1    1200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5ED27ACE
+P 2000 3100
+F 0 "SW1" H 2000 3385 50  0000 C CNN
+F 1 "SW_SPDT" H 2000 3294 50  0000 C CNN
+F 2 "" H 2000 3100 50  0001 C CNN
+F 3 "~" H 2000 3100 50  0001 C CNN
+	1    2000 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 3200
+NoConn ~ 2200 3000
+Wire Wire Line
+	1500 3100 1800 3100
+$Comp
+L power:GND #PWR01
+U 1 1 5ED287A5
+P 1700 3650
+F 0 "#PWR01" H 1700 3400 50  0001 C CNN
+F 1 "GND" H 1705 3477 50  0000 C CNN
+F 2 "" H 1700 3650 50  0001 C CNN
+F 3 "" H 1700 3650 50  0001 C CNN
+	1    1700 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4200 3350
+NoConn ~ 4200 3450
+NoConn ~ 4200 3550
+$Comp
+L Connector_Generic:Conn_02x04_Top_Bottom J3
+U 1 1 5ED3049A
+P 6800 4200
+F 0 "J3" V 6896 3912 50  0000 R CNN
+F 1 "Conn_02x04_Top_Bottom" V 6805 3912 50  0000 R CNN
+F 2 "" H 6800 4200 50  0001 C CNN
+F 3 "~" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6800 3900
+NoConn ~ 6900 3900
+NoConn ~ 7000 3900
+$Comp
+L power:+5V #PWR08
+U 1 1 5ED36A66
+P 6700 3800
+F 0 "#PWR08" H 6700 3650 50  0001 C CNN
+F 1 "+5V" H 6715 3973 50  0000 C CNN
+F 2 "" H 6700 3800 50  0001 C CNN
+F 3 "" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5ED36FFE
+P 5700 5150
+F 0 "#PWR06" H 5700 5000 50  0001 C CNN
+F 1 "+5V" H 5715 5323 50  0000 C CNN
+F 2 "" H 5700 5150 50  0001 C CNN
+F 3 "" H 5700 5150 50  0001 C CNN
+	1    5700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5050 5500 5150
+Wire Wire Line
+	5700 5150 5500 5150
+Connection ~ 5500 5150
+Wire Wire Line
+	6700 3800 6700 3900
+Wire Wire Line
+	7000 4400 7000 4750
+Wire Wire Line
+	7000 4750 7300 4750
+Wire Wire Line
+	6800 4400 6800 4850
+Wire Wire Line
+	6800 4850 5500 4850
+Wire Wire Line
+	6900 4750 6900 4400
+Wire Wire Line
+	5500 4650 7300 4650
+$Comp
+L power:GND #PWR07
+U 1 1 5ED38334
+P 5850 5150
+F 0 "#PWR07" H 5850 4900 50  0001 C CNN
+F 1 "GND" H 5855 4977 50  0000 C CNN
+F 2 "" H 5850 5150 50  0001 C CNN
+F 3 "" H 5850 5150 50  0001 C CNN
+	1    5850 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5ED383BF
+P 7000 5150
+F 0 "#PWR09" H 7000 4900 50  0001 C CNN
+F 1 "GND" H 7005 4977 50  0000 C CNN
+F 2 "" H 7000 5150 50  0001 C CNN
+F 3 "" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4850 7000 4850
+Wire Wire Line
+	7000 4850 7000 5150
+Wire Wire Line
+	5500 4950 5850 4950
+Wire Wire Line
+	5850 4950 5850 5150
+Wire Wire Line
+	5500 4550 5850 4550
+Connection ~ 5850 4950
+Wire Wire Line
+	5500 4250 5850 4250
+Wire Wire Line
+	5850 4250 5850 4550
+Connection ~ 5850 4550
+Wire Wire Line
+	5500 3750 5850 3750
+Wire Wire Line
+	5850 3750 5850 4250
+Connection ~ 5850 4250
+Wire Wire Line
+	5500 3550 5850 3550
+Wire Wire Line
+	5850 3550 5850 3750
+Connection ~ 5850 3750
+$Comp
+L power:GND #PWR05
+U 1 1 5ED39C2E
+P 3650 5200
+F 0 "#PWR05" H 3650 4950 50  0001 C CNN
+F 1 "GND" H 3655 5027 50  0000 C CNN
+F 2 "" H 3650 5200 50  0001 C CNN
+F 3 "" H 3650 5200 50  0001 C CNN
+	1    3650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5ED3A0F0
+P 2900 3200
+F 0 "#PWR03" H 2900 3050 50  0001 C CNN
+F 1 "+5V" H 2915 3373 50  0000 C CNN
+F 2 "" H 2900 3200 50  0001 C CNN
+F 3 "" H 2900 3200 50  0001 C CNN
+	1    2900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:LD271 D1
+U 1 1 5ED3C64A
+P 2900 3400
+F 0 "D1" V 2896 3323 50  0000 R CNN
+F 1 "LED" V 2805 3323 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 2900 3575 50  0001 C CNN
+F 3 "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf" H 2850 3400 50  0001 C CNN
+	1    2900 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 5ED3DC35
+P 2500 3550
+F 0 "C1" H 2678 3596 50  0000 L CNN
+F 1 "47u" H 2678 3505 50  0000 L CNN
+F 2 "" H 2500 3550 50  0001 C CNN
+F 3 "~" H 2500 3550 50  0001 C CNN
+	1    2500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R1
+U 1 1 5ED3EC83
+P 2900 3950
+F 0 "R1" H 2968 3996 50  0000 L CNN
+F 1 "1k" H 2968 3905 50  0000 L CNN
+F 2 "" H 2900 3950 50  0001 C CNN
+F 3 "~" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3200 2500 3200
+Wire Wire Line
+	2900 3300 2900 3200
+Connection ~ 2900 3200
+Wire Wire Line
+	2500 3300 2500 3200
+Connection ~ 2500 3200
+Wire Wire Line
+	2500 3200 2900 3200
+Wire Wire Line
+	2900 3600 2900 3700
+Wire Wire Line
+	1500 3300 1700 3300
+Wire Wire Line
+	1700 3300 1700 3650
+$Comp
+L power:GND #PWR04
+U 1 1 5ED49691
+P 2900 4300
+F 0 "#PWR04" H 2900 4050 50  0001 C CNN
+F 1 "GND" H 2905 4127 50  0000 C CNN
+F 2 "" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0001 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5ED4991D
+P 2500 4300
+F 0 "#PWR02" H 2500 4050 50  0001 C CNN
+F 1 "GND" H 2505 4127 50  0000 C CNN
+F 2 "" H 2500 4300 50  0001 C CNN
+F 3 "" H 2500 4300 50  0001 C CNN
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3800 2500 4300
+Wire Wire Line
+	2900 4200 2900 4300
+Wire Wire Line
+	4200 3250 3650 3250
+Wire Wire Line
+	3650 3250 3650 3950
+Wire Wire Line
+	4200 3950 3650 3950
+Connection ~ 3650 3950
+Wire Wire Line
+	3650 3950 3650 4750
+Wire Wire Line
+	4200 4750 3650 4750
+Connection ~ 3650 4750
+Wire Wire Line
+	3650 4750 3650 5200
+Text Label 6000 4650 0    50   ~ 0
+lidarOn@3.3V
+Wire Wire Line
+	5850 4550 5850 4950
+Wire Wire Line
+	5500 4750 6900 4750
+Text Label 5900 4750 0    50   ~ 0
+DataFromLidar@3.3V(Blue)
+Text Label 5900 4850 0    50   ~ 0
+DataToLidar@3.3V(Yellow)
+Text Label 6700 3850 0    50   ~ 0
+Red
+Text Label 7000 4500 0    50   ~ 0
+Brown
+$EndSCHEMATC
